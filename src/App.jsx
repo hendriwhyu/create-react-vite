@@ -42,18 +42,32 @@ function App() {
       <div className="px-[72px] py-[89px] grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {contents.map((item) => (
           <section className="w-[352px]" key={item.title}>
-            <div className="bg-[#152A46] rounded-t-[20px] flex flex-row ">
+            <div className="bg-[#152A46] h-[129px] rounded-t-[20px] flex flex-row ">
               <img
                 src="/assets/image/person.png"
-                className="w-[75px] h-[149.15px] ml-[28px]"
+                className="w-[75px] h-[149.15px] ml-[28px] mt-[16px]"
               />
-              <div className="">
-                <h2 className="ml-[17px] mt-[27px] text-[16px] font-semibold text-[#FFCD29]">
-                  Intensive Bootcamp
+              <div className=" mb-[29px] ml-[17px] mt-[27px]">
+                <h2 className="text-[16px] font-semibold text-[#FFCD29]">
+                  Insentif Bootcamp
                 </h2>
-                <p className="ml-[17px] mt-[9px] text-[20px] font-bold text-white"></p>
-                <p className="text-[12px] font-normal"></p>
+                <div className="w-[231px] h-[44px]">
+                  <p className=" text-[20px] font-bold text-white">
+                    Programming Laravel
+                  </p>
+                  <p className="text-[12px] font-normal text-white">
+                    (Getting started with Laravel 9)
+                  </p>
+                </div>
               </div>
+            </div>
+            <div className="h-[164px] bg-[#FFFFFF] inline-block">
+              <h2 className="text-[20px] pt-[9px] pl-[24px] pr-[14px] leading-[25px] font-extrabold">
+                Programming Laravel
+              </h2>
+              <h2 className="text-[17px] pt-[9px] pl-[24px] pr-[14px] leading-[25px] font-extrabold">
+                Getting Started with Laravel 9
+              </h2>
             </div>
             {item.html}
             {/* <p>Harga: Rp {item.discountPrice ? (
